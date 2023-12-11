@@ -45,7 +45,6 @@ class TeamMatches extends Component {
         ))}
       </>
     )
-    // render
   }
 
   render() {
@@ -53,7 +52,8 @@ class TeamMatches extends Component {
     return (
       <div className="team-matches-container1">
         {isLoading ? (
-          <div data-testid="loader">
+          // eslint-disable-next-line react/no-unknown-property
+          <div testid="loader">
             <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
           </div>
         ) : (
